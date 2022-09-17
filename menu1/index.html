@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+   <link rel="stylesheet" href="/coder-xranklin-demo/libs/highlight/styles/github.min.css">
+   
+  <link rel="stylesheet" href="/coder-xranklin-demo/css/franklin.css">
+<link rel="stylesheet" href="/coder-xranklin-demo/css/poole_hyde.css">
+
+<style>
+  html {font-size: 17px;}
+  .franklin-content {position: relative; padding-left: 8%; padding-right: 5%; line-height: 1.35em;}
+  @media (min-width: 940px) {
+    .franklin-content {width: 100%; margin-left: auto; margin-right: auto;}
+  }
+  @media (max-width: 768px) {
+    .franklin-content {padding-left: 6%; padding-right: 6%;}
+  }
+</style>
+<link rel="icon" href="/coder-xranklin-demo/assets/favicon.png">
+
+  
+</head>
+<body>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1><a href="/coder-xranklin-demo/">Hyde</a></h1>
+      <p class="lead">A two-column theme.</p>
+    </div>
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item " href="/coder-xranklin-demo/">Home</a>
+      <a class="sidebar-nav-item active" href="/coder-xranklin-demo/menu1/">Code blocks</a>
+      <a class="sidebar-nav-item " href="/coder-xranklin-demo/menu2/">More goodies</a>
+    </nav>
+    <p>&copy; "Septimia Zenobia".</p>
+  </div>
+</div>
+<div class="content container">
+
+
+<div class="franklin-content" >
+  <h1 id="menu_1" ><a href="#menu_1"> Menu 1</a></h1><p>Hello</p>
+<pre><code class="julia">rand(5)</code></pre>
+<div class="code-output"><pre><code class="code-result language-plaintext">5-element Vector{Float64}:
+ 0.8050234953734553
+ 0.5052213433027246
+ 0.8329854556708927
+ 0.5890666698880673
+ 0.45257115505779977</code></pre></div><p>DataFrames (note that the <code>using DataFrames</code> is in <code>utils.jl</code>, it doesn't have to, if you put it there it will be loaded every time )</p>
+<pre><code class="julia">using DataFrames
+df = DataFrame(A=1:4, B=[&quot;M&quot;, &quot;F&quot;, &quot;F&quot;, &quot;M&quot;])</code></pre>
+<div class="code-output"><div class="data-frame"><p>4 rows × 2 columns</p><table class="data-frame"><thead><tr><th></th><th>A</th><th>B</th></tr><tr><th></th><th title="Int64">Int64</th><th title="String">String</th></tr></thead><tbody><tr><th>1</th><td>1</td><td>M</td></tr><tr><th>2</th><td>2</td><td>F</td></tr><tr><th>3</th><td>3</td><td>F</td></tr><tr><th>4</th><td>4</td><td>M</td></tr></tbody></table></div></div>
+  <div class="page-foot">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+    "Septimia Zenobia".
+
+    Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>
+    and the <a href="https://julialang.org">Julia programming language</a>.
+</div>
+
+</div>
+
+    </div>  
+    
+    
+        <script src="/coder-xranklin-demo/libs/highlight/highlight.min.js"></script>
+<script>hljs.highlightAll();hljs.configure({tabReplace: '    '});</script>
+
+    
+  </body>
+</html>
