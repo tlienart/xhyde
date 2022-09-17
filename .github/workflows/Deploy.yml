@@ -1,0 +1,14 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: tlienart/xranklin-build-action@v2
+        with:
+          BASE_URL_PREFIX: "coder-xranklin-demo"
+          CLEAR_CACHE: ${{ contains(github.event.head_commit.message, '[clear]') }}
